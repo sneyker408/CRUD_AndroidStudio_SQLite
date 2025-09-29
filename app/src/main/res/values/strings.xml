@@ -1,0 +1,26 @@
+<resources>
+        <string name="app_name">CRUD SQLite</string>
+
+    <!-- Labels -->
+    <string name="nombre">Nombre</string>
+    <string name="email">Email</string>
+    <string name="edad">Edad</string>
+    <string name="usuarios">Usuarios</string>
+
+    <!-- Hints -->
+    <string name="ingrese_nombre">Ingrese nombre</string>
+    <string name="ingrese_email">Ingrese email</string>
+    <string name="ingrese_edad">Ingrese edad</string>
+
+    <!-- Botones -->
+    <string name="agregar">Agregar</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- Mensajes -->
+    <string name="no_hay_datos">No hay datos para mostrar</string>
+    <string name="no_hay_usuarios">No hay usuarios registrados</string>
+</resources>
