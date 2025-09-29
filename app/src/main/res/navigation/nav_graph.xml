@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaUsuariosFragment">
+
+    <fragment
+        android:id="@+id/listaUsuariosFragment"
+        android:name="com.sneyker.crud_sqlite.ListaUsuariosFragment"
+        android:label="Lista de Usuarios"
+        tools:layout="@layout/fragment_lista_usuarios">
+
+        <action
+            android:id="@+id/action_listaUsuariosFragment_to_agregarUsuarioFragment"
+            app:destination="@id/agregarUsuarioFragment" />
+        <action
+            android:id="@+id/action_listaUsuariosFragment_to_editarUsuarioFragment"
+            app:destination="@id/editarUsuarioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/agregarUsuarioFragment"
+        android:name="com.sneyker.crud_sqlite.AgregarUsuarioFragment"
+        android:label="Agregar Usuario"
+        tools:layout="@layout/fragment_agregar_usuario">
+
+
+        <action
+            android:id="@+id/action_agregarUsuarioFragment_to_listaUsuariosFragment"
+            app:destination="@id/listaUsuariosFragment"
+            app:popUpTo="@id/listaUsuariosFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editarUsuarioFragment"
+        android:name="com.sneyker.crud_sqlite.EditarUsuarioFragment"
+        android:label="Editar Usuario"
+        tools:layout="@layout/fragment_editar_usuario"/>
+
+</navigation>
